@@ -1,0 +1,85 @@
+#root {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.container header {
+  text-align: center;
+}
+
+.upload {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.preview, .output {
+  margin: 1rem 0;
+}
+
+.video-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+video {
+  max-width: 100%;
+  border-radius: 8px;
+  background: #111;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.progress {
+  position: relative;
+  flex: 1;
+  height: 10px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 5px;
+}
+
+.progress .bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: #646cff;
+  border-radius: 5px;
+}
+
+.progress span {
+  margin-left: 0.5rem;
+}
+
+.error {
+  color: #ff6b6b;
+}
+
+.download {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 6px;
+}
